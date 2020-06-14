@@ -2,21 +2,31 @@ import React, { useState } from 'react';
 import './App.css';
 import Input from './components/Input';
 import Result from './components/Result';
+import axios from 'axios';
 
 function App() {
   const [state, setState] = useState({
-    nextTrain: { timeToNextTrain: "", cost: "", travelDuration: "" }
+    nextTrain: { timeToNextTrain: "", cost: "", travelDuration: "" },
+    loading: false
   });
 
   const getNextTrain = (origin, destination) => {
-    const randResponses = [
-      { timeToNextTrain: "14 Minutos", cost: "$182", travelDuration: "20 Minutos" },
-      { timeToNextTrain: "10 Minutos", cost: "$132", travelDuration: "7 Minutos" },
-      { timeToNextTrain: "5 Minutos", cost: "$152", travelDuration: "15 Minutos" },
-      { timeToNextTrain: "28 Minutos", cost: "$162", travelDuration: "17 Minutos" }
-    ]
-    const nextTrain = randResponses[Math.floor(Math.random() * randResponses.length)]
-    setState(() => ({ nextTrain: nextTrain }))
+    setState(() => ({
+      loading: true,
+      nextTrain: { timeToNextTrain: "", cost: "", travelDuration: "" }
+    }));
+
+    axios.get('https://phpinguino.herokuapp.com/pingu-trener-api/next/', {
+      params: { origin, destination }
+    }).then(response => {
+      setState(() => ({ loading: false, nextTrain: response.data }))
+    }).catch(error => {
+      alert(error);
+      setState(() => ({
+        loading: false,
+        nextTrain: { timeToNextTrain: "", cost: "", travelDuration: "" }
+      }));
+    });
   }
 
   return (
@@ -25,7 +35,7 @@ function App() {
         <h1>Pingu Trener</h1>
       </header>
       <main>
-        <Input getNextTrain={getNextTrain} />
+        <Input getNextTrain={getNextTrain} loading={state.loading} />
         <Result nextTrain={state.nextTrain} />
       </main>
     </div>
