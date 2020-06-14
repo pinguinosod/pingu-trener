@@ -1,4 +1,38 @@
 .travel-input {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr 2fr 2fr 2fr;
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.travel-input > *:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.travel-input > h3 {
+  margin: 0;
+}
+
+.travel-input > label {
+  text-align: right;
+}
+
+.travel-input > select {
+  font-size: calc(6px + 2vmin);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.travel-input > button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: calc(6px + 2vmin);
+  border-radius: 4px;
+  background-color: #29752c;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
 }
