@@ -1,0 +1,218 @@
+[
+  {
+    "codigo": 0,
+    "nombre": "Puerto",
+    "tramo": 1,
+    "tipo": 0,
+    "tiempo": 0,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 1,
+    "nombre": "Bellavista",
+    "tramo": 1,
+    "tipo": 0,
+    "tiempo": 1,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 2,
+    "nombre": "Francia",
+    "tramo": 1,
+    "tipo": 0,
+    "tiempo": 3,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 3,
+    "nombre": "Barón",
+    "tramo": 1,
+    "tipo": 0,
+    "tiempo": 4,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 4,
+    "nombre": "Portales",
+    "tramo": 1,
+    "tipo": 0,
+    "tiempo": 7,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 5,
+    "nombre": "Recreo",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 9,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 6,
+    "nombre": "Miramar",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 11,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 7,
+    "nombre": "Viña del Mar",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 13,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 8,
+    "nombre": "Hospital",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 14,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 9,
+    "nombre": "Chorrillos",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 16,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 10,
+    "nombre": "El Salto",
+    "tramo": 2,
+    "tipo": 0,
+    "tiempo": 18,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 11,
+    "nombre": "Quilpué",
+    "tramo": 3,
+    "tipo": 0,
+    "tiempo": 29,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 12,
+    "nombre": "El Sol",
+    "tramo": 3,
+    "tipo": 0,
+    "tiempo": 31,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 13,
+    "nombre": "El Belloto",
+    "tramo": 3,
+    "tipo": 0,
+    "tiempo": 33,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 14,
+    "nombre": "Las Américas",
+    "tramo": 4,
+    "tipo": 0,
+    "tiempo": 35,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 15,
+    "nombre": "La Concepción",
+    "tramo": 4,
+    "tipo": 0,
+    "tiempo": 37,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 16,
+    "nombre": "Villa Alemana",
+    "tramo": 4,
+    "tipo": 0,
+    "tiempo": 38,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 17,
+    "nombre": "Sargento Aldea",
+    "tramo": 4,
+    "tipo": 0,
+    "tiempo": 40,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 18,
+    "nombre": "Peñablanca",
+    "tramo": 4,
+    "tipo": 0,
+    "tiempo": 42,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 19,
+    "nombre": "Limache",
+    "tramo": 5,
+    "tipo": 0,
+    "tiempo": 53,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 20,
+    "nombre": "Quillota",
+    "tramo": 6,
+    "tipo": 1,
+    "tiempo": 53,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 21,
+    "nombre": "Limache Viejo",
+    "tramo": 7,
+    "tipo": 1,
+    "tiempo": 53,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 22,
+    "nombre": "La Calera",
+    "tramo": 8,
+    "tipo": 1,
+    "tiempo": 53,
+    "latitud": 0,
+    "longitud": 0
+  },
+  {
+    "codigo": 23,
+    "nombre": "Olmué",
+    "tramo": 9,
+    "tipo": 1,
+    "tiempo": 12,
+    "latitud": 0,
+    "longitud": 0
+  }
+]
