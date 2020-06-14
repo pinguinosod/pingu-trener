@@ -1,0 +1,4 @@
+.travel-input {
+  display: grid;
+  grid-template-columns: auto;
+}
