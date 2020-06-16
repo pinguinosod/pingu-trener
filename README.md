@@ -1,4 +1,20 @@
 # Pingu Trener
-Train station app for a programming challenge by https://ninjas.cl
+Train station app for a [programming challenge](https://github.com/NinjasCL/trener) by [ninjas.cl](https://ninjas.cl)
 
-The challenge: https://github.com/NinjasCL/trener
+This application is live on https://pingu-trener.netlify.app/
+
+## Local Setup
+* Install node modules
+```
+npm install
+```
+
+* Start backend mock for handling http requests
+```
+npm run backend-mock
+```
+
+* Start frontend application
+```
+npm run start
+```

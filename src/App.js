@@ -16,7 +16,7 @@ function App() {
       nextTrain: { timeToNextTrain: "", cost: "", travelDuration: "" }
     }));
 
-    axios.get('https://phpinguino.herokuapp.com/pingu-trener-api/next/', {
+    axios.get('/next/', {
       params: { origin, destination }
     }).then(response => {
       setState(() => ({ loading: false, nextTrain: response.data }))
