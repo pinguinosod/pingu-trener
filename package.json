@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "backend-mock": "node backend/server-mock.js"
+    "backend-mock": "node backend/server-mock.js",
+    "coverage": "react-scripts test --env=jsdom --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
