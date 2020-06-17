@@ -20,7 +20,7 @@
 }
 
 .travel-input > select {
-  font-size: calc(6px + 2vmin);
+  font-size: calc(10px + 1vmin);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -30,10 +30,15 @@
 .travel-input > button {
   grid-column-start: 2;
   grid-column-end: 3;
-  font-size: calc(6px + 2vmin);
+  font-size: calc(10px + 1vmin);
   border-radius: 4px;
   background-color: #29752c;
   border: none;
   color: #ddd;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.travel-input.hidden {
+  display: none;
 }

@@ -16,5 +16,5 @@ npm run backend-mock
 
 * Start frontend application
 ```
-npm run start
+npm start
 ```

@@ -1,0 +1,30 @@
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: calc(200px + 32vmin);
+  margin: auto;
+}
+
+.navigation-bar > button {
+  font-size: calc(6px + 2vmin);
+  border: none;
+  color: #ddd;
+  padding: 20px;
+  background-color: #282c34;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation-bar > button.active {
+  background-color: #294c75;
+}
+
+.navigation-bar > button:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.navigation-bar > button:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

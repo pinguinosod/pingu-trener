@@ -1,4 +1,4 @@
-.travel-result {
+.user-configuration {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 2fr 2fr 2fr;
@@ -7,27 +7,27 @@
   margin-top: 32px;
 }
 
-.travel-result > *:first-child {
+.user-configuration > *:first-child {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.travel-result > h3 {
+.user-configuration > h3 {
   margin: 0;
 }
 
-.travel-result > label {
+.user-configuration > label {
   text-align: right;
 }
 
-.travel-result > input[type=text] {
+.user-configuration > select {
   font-size: calc(10px + 1vmin);
   border-radius: 4px;
+  cursor: pointer;
   border: none;
-  padding-left: 8px;
-  background-color: #ddd;
+  padding-left: 4px;
 }
 
-.travel-result.hidden {
+.user-configuration.hidden {
   display: none;
 }

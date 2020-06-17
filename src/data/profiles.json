@@ -1,0 +1,18 @@
+[
+  {
+    "codigo": 0,
+    "tipo": "General"
+  },
+  {
+    "codigo": 1,
+    "tipo": "Estudiante"
+  },
+  {
+    "codigo": 2,
+    "tipo": "Adulto Mayor"
+  },
+  {
+    "codigo": 3,
+    "tipo": "Minusválido"
+  }
+]

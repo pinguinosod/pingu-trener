@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 function Input(props) {
-  const { getNextTrain, loading } = props;
+  const { getNextTrain, isLoading, displayed } = props;
   const [state, setState] = useState({ origin: "", destination: "" });
 
   const stationOptionList = () => {
@@ -24,19 +24,19 @@ function Input(props) {
     setState((prevState) => ({ origin: prevState.origin, destination: newDestination }));
   }
 
-  const searchButtonText = (loading) => {
-    return loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Buscar";
+  const searchButtonText = (isLoading) => {
+    return isLoading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Buscar";
   }
 
   return (
-    <div className="travel-input">
+    <div className={`${displayed ? "travel-input" : "travel-input hidden"}`}>
       <h3>Viaje</h3>
 
       <label htmlFor="origen">Origen</label>
       <select name="origen"
         value={state.origin}
         onChange={selectOrigin}
-        disabled={loading}>
+        disabled={isLoading}>
         <option value="">Seleccione Origen</option>
         {stationOptionList()}
       </select>
@@ -45,14 +45,14 @@ function Input(props) {
       <select name="destino"
         value={state.destination}
         onChange={selectDestination}
-        disabled={loading}>
+        disabled={isLoading}>
         <option value="">Seleccione Destino</option>
         {stationOptionList()}
       </select>
 
       <button onClick={() => getNextTrain(state.origin, state.destination)}
-        disabled={loading}>
-        {searchButtonText(loading)}
+        disabled={isLoading}>
+        {searchButtonText(isLoading)}
       </button>
     </div>
   );

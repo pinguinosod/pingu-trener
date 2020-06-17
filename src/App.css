@@ -2,18 +2,27 @@
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto 100px;
+  font-size: calc(10px + 1vmin);
   color: #ddd;
+}
+
+.App > *:nth-child(1) {
+  align-self: start;
+}
+
+.App > *:nth-child(2) {
+  align-self: center;
+}
+
+.App > *:nth-child(3) {
+  align-self: end;
 }
 
 main {
   padding: 16px;
-}
-
-main > div + div {
-  margin-top: 32px;
+  max-width: calc(400px + 32vmin);
+  margin: auto;
 }
