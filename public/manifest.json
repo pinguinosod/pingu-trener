@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pingu Trener",
+  "name": "Información de viajes en Merval (Metro Valparaíso).",
   "icons": [
     {
       "src": "favicon.ico",
