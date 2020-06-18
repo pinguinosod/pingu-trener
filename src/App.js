@@ -15,6 +15,11 @@ function App() {
   });
 
   const getNextTrain = (origin, destination) => {
+    if (origin === "" || destination === "") {
+      alert('Debe seleccionar Origen y Destino');
+      return false;
+    }
+
     setState((prev) => ({
       isLoading: true,
       selectedTab: prev.selectedTab,
