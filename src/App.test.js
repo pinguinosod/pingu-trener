@@ -15,8 +15,8 @@ describe('App', () => {
     const wrapper = shallow(<App />);
 
     expect(wrapper.find('header')).toHaveLength(1);
+    expect(wrapper.find('nav')).toHaveLength(1);
     expect(wrapper.find('main')).toHaveLength(1);
-    expect(wrapper.find('footer')).toHaveLength(1);
   });
 
   it('shoud render Pingu Trener title', () => {
@@ -28,9 +28,9 @@ describe('App', () => {
   it('shoud render Input, Result, UserConfiguration and NavigationBar', () => {
     const wrapper = shallow(<App />);
 
+    expect(wrapper.find('nav').find(NavigationBar)).toHaveLength(1);
     expect(wrapper.find('main').find(Input)).toHaveLength(1);
     expect(wrapper.find('main').find(Result)).toHaveLength(1);
     expect(wrapper.find('main').find(UserConfiguration)).toHaveLength(1);
-    expect(wrapper.find('footer').find(NavigationBar)).toHaveLength(1);
   });
 });

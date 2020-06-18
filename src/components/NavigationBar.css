@@ -8,15 +8,23 @@
 .navigation-bar > button {
   font-size: calc(6px + 2vmin);
   border: none;
-  color: #ddd;
+  color: #aaa;
   padding: 20px;
   background-color: #282c34;
   font-weight: bold;
   cursor: pointer;
+  border: 0;
+  outline: 0;
 }
 
 .navigation-bar > button.active {
-  background-color: #294c75;
+  color: #eee;
+  border-bottom: 6px solid #3c70ac;
+  padding-bottom: 14px;
+}
+
+.navigation-bar > button:focus {
+  color: #fff;
 }
 
 .navigation-bar > button:first-child {

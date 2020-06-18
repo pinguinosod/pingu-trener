@@ -65,6 +65,9 @@ function App() {
       <header>
         <h1>Pingu Trener</h1>
       </header>
+      <nav>
+        <NavigationBar selectedTab={state.selectedTab} changeTab={changeTab} />
+      </nav>
       <main>
         <Input getNextTrain={getNextTrain} isLoading={state.isLoading}
           displayed={(state.selectedTab === 'viaje')} />
@@ -73,9 +76,6 @@ function App() {
         <UserConfiguration changeProfile={changeProfile} selectedProfile={state.selectedProfile} 
           displayed={(state.selectedTab === 'datos')} />
       </main>
-      <footer>
-        <NavigationBar selectedTab={state.selectedTab} changeTab={changeTab} />
-      </footer>
     </div>
   );
 }

@@ -6,7 +6,6 @@ import NavigationBar from './NavigationBar';
 configure({adapter : new Adapter()});
 
 describe('App', () => {
-  
 
   it('shoud render 2 buttons, first with text Viaje and second with text Mis Datos', () => {
     const wrapper = shallow(<NavigationBar />);

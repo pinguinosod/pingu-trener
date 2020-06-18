@@ -1,6 +1,6 @@
 .travel-input {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   grid-template-rows: 3fr 2fr 2fr 2fr;
   column-gap: 16px;
   row-gap: 8px;
@@ -34,7 +34,7 @@
   border-radius: 4px;
   background-color: #29752c;
   border: none;
-  color: #ddd;
+  color: #eee;
   font-weight: bold;
   cursor: pointer;
 }

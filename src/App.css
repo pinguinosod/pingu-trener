@@ -4,9 +4,9 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: calc(16px + 16vmin) calc(40px + 4vmin) auto;
   font-size: calc(10px + 1vmin);
-  color: #ddd;
+  color: #eee;
 }
 
 .App > *:nth-child(1) {
@@ -14,15 +14,14 @@
 }
 
 .App > *:nth-child(2) {
-  align-self: center;
+  align-self: start;
 }
 
 .App > *:nth-child(3) {
-  align-self: end;
+  align-self: start;
 }
 
 main {
   padding: 16px;
-  max-width: calc(400px + 32vmin);
-  margin: auto;
+  margin: 4vmin auto 0 auto;
 }
