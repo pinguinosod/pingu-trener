@@ -1,9 +1,9 @@
 .user-configuration {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 3fr 2fr;
+  grid-template-columns: auto calc(140px + 12vmin);
   column-gap: 16px;
   row-gap: 8px;
+  align-items: center;
 }
 
 .user-configuration > *:first-child {
@@ -25,6 +25,8 @@
   cursor: pointer;
   border: none;
   padding-left: 4px;
+  max-width: 240px;
+  height: 32px;
 }
 
 .user-configuration.hidden {

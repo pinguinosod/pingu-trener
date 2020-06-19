@@ -11,7 +11,7 @@ configure({adapter : new Adapter()});
 
 describe('App', () => {
 
-  it('shoud render header, main and footer', () => {
+  it('shoud render header, nav and main', () => {
     const wrapper = shallow(<App />);
 
     expect(wrapper.find('header')).toHaveLength(1);
@@ -19,7 +19,7 @@ describe('App', () => {
     expect(wrapper.find('main')).toHaveLength(1);
   });
 
-  it('shoud render Pingu Trener title', () => {
+  it('shoud render Pingu Trener as title', () => {
     const wrapper = shallow(<App />);
 
     expect(wrapper.find('header > h1').text()).toBe('Pingu Trener');

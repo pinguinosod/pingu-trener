@@ -24,4 +24,5 @@
 main {
   padding: 16px;
   margin: 4vmin auto 0 auto;
+  max-width: 440px;
 }
