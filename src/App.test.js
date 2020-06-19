@@ -33,4 +33,5 @@ describe('App', () => {
     expect(wrapper.find('main').find(Result)).toHaveLength(1);
     expect(wrapper.find('main').find(UserConfiguration)).toHaveLength(1);
   });
+
 });

@@ -5,7 +5,7 @@ import NavigationBar from './NavigationBar';
 
 configure({adapter : new Adapter()});
 
-describe('App', () => {
+describe('NavigationBar', () => {
 
   it('shoud render 2 buttons, first with text Viaje and second with text Mis Datos', () => {
     const wrapper = shallow(<NavigationBar />);
@@ -32,9 +32,8 @@ describe('App', () => {
   it('shoud call changeTab method with viaje as parameter when first button is clicked', () => {
     const mockChangeTab = jest.fn();
     const wrapper = shallow(<NavigationBar changeTab={mockChangeTab} />);
-    const firstButton = wrapper.find('button:first-child');
-
-    firstButton.simulate('click');
+    
+    wrapper.find('button:first-child').simulate('click');
 
     expect(mockChangeTab).toHaveBeenCalledWith('viaje');
   });
@@ -42,10 +41,10 @@ describe('App', () => {
   it('shoud call changeTab method with datos as parameter when second button is clicked', () => {
     const mockChangeTab = jest.fn();
     const wrapper = shallow(<NavigationBar changeTab={mockChangeTab} />);
-    const lastButton = wrapper.find('button:last-child');
-
-    lastButton.simulate('click');
+    
+    wrapper.find('button:last-child').simulate('click');
 
     expect(mockChangeTab).toHaveBeenCalledWith('datos');
   });
+
 });
