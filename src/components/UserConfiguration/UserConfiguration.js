@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserConfiguration.css';
-import profiles from './../data/profiles';
+import profiles from './../../data/profiles';
 
 function UserConfiguration(props) {
   const { selectedProfile, changeProfile, displayed } = props;

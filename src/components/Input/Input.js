@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Input.css';
-import stations from './../data/stations';
+import stations from './../../data/stations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 

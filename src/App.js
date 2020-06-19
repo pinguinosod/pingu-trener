@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import Input from './components/Input';
-import Result from './components/Result';
-import NavigationBar from './components/NavigationBar';
+import Input from './components/Input/Input';
+import Result from './components/Result/Result';
+import Navigation from './components/Navigation/Navigation';
+import UserConfiguration from './components/UserConfiguration/UserConfiguration';
 import axios from 'axios';
-import UserConfiguration from './components/UserConfiguration';
 
 function App() {
   const [state, setState] = useState({
@@ -71,14 +71,14 @@ function App() {
         <h1>Pingu Trener</h1>
       </header>
       <nav>
-        <NavigationBar selectedTab={state.selectedTab} changeTab={changeTab} />
+        <Navigation selectedTab={state.selectedTab} changeTab={changeTab} />
       </nav>
       <main>
         <Input getNextTrain={getNextTrain} isLoading={state.isLoading}
           displayed={(state.selectedTab === 'viaje')} />
         <Result nextTrain={state.nextTrain} selectedProfile={state.selectedProfile}
           displayed={(state.selectedTab === 'viaje')} />
-        <UserConfiguration changeProfile={changeProfile} selectedProfile={state.selectedProfile} 
+        <UserConfiguration changeProfile={changeProfile} selectedProfile={state.selectedProfile}
           displayed={(state.selectedTab === 'datos')} />
       </main>
     </div>

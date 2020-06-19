@@ -1,6 +1,6 @@
 import React from 'react';
 import './Result.css';
-import profiles from './../data/profiles';
+import profiles from './../../data/profiles';
 
 function Result(props) {
   const { nextTrain, displayed, selectedProfile } = props;

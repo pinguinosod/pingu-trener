@@ -1,7 +1,7 @@
 import React from 'react';
-import './NavigationBar.css';
+import './Navigation.css';
 
-function NavigationBar(props) {
+function Navigation(props) {
   const { selectedTab, changeTab } = props;
 
   return (
@@ -16,4 +16,4 @@ function NavigationBar(props) {
   );
 }
 
-export default NavigationBar;
+export default Navigation;

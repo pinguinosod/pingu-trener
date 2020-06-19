@@ -2,10 +2,10 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import App from './App';
-import Input from './components/Input';
-import Result from './components/Result';
-import UserConfiguration from './components/UserConfiguration';
-import NavigationBar from './components/NavigationBar';
+import Input from './components/Input/Input';
+import Result from './components/Result/Result';
+import UserConfiguration from './components/UserConfiguration/UserConfiguration';
+import Navigation from './components/Navigation/Navigation';
 
 configure({adapter : new Adapter()});
 
@@ -25,10 +25,10 @@ describe('App', () => {
     expect(wrapper.find('header > h1').text()).toBe('Pingu Trener');
   });
 
-  it('shoud render Input, Result, UserConfiguration and NavigationBar', () => {
+  it('shoud render Input, Result, UserConfiguration and Navigation', () => {
     const wrapper = shallow(<App />);
 
-    expect(wrapper.find('nav').find(NavigationBar)).toHaveLength(1);
+    expect(wrapper.find('nav').find(Navigation)).toHaveLength(1);
     expect(wrapper.find('main').find(Input)).toHaveLength(1);
     expect(wrapper.find('main').find(Result)).toHaveLength(1);
     expect(wrapper.find('main').find(UserConfiguration)).toHaveLength(1);
