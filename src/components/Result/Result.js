@@ -19,7 +19,7 @@ function Result(props) {
       <label htmlFor="costo">Costo {profileText(selectedProfile)}</label>
       <input type="text" name="costo" readOnly value={nextTrain.cost}></input>
       <label htmlFor="tiempo">Tiempo Viaje</label>
-      <input type="text"name="tiempo" readOnly value={nextTrain.travelDuration}></input>
+      <input type="text" name="tiempo" readOnly value={nextTrain.travelDuration}></input>
     </div>
   );
 }
